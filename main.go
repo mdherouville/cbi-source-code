@@ -105,7 +105,7 @@ var limit = "1000"
 func main() {
 
 	// Establish connection to Postgres Database
-	db_connection := "user=postgres dbname=chicago_business_intelligence password=root host=host.docker.internal sslmode=disable port = 5433"
+	db_connection := "user=postgres dbname=chicago_business_intelligence password=root host=/cloudsql/c-b-i-mlbdh:us-central1:mypostgres sslmode=disable port = 5432"
 
 	// Docker image for the microservice - uncomment when deploy
 	//db_connection := "user=postgres dbname=chicago_business_intelligence password=root host=host.docker.internal sslmode=disable"
